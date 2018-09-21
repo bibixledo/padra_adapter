@@ -6,17 +6,12 @@ package padrao_adapter;
 public class Padrao_Adapter {
      
     public static void main(String[] args) {
-       
-        int numeroC = 37;
-        int numeroR = 44;
-        Brasileiro br = new Americano();
-        //CALÇADO
-        System.out.println("Número BR: "+numeroC);
-        br.calcadoBR(numeroC);  
+
+        int numeroR = 43;
+        Brasileiro br = new Adapter();
         
         // ROUPA
-        System.out.println("Número BR: "+numeroR);
-        br.roupaBR(numeroR);
+        System.out.println("Sigla BR: "+ br.roupaBR(numeroR));
         
     }
     
